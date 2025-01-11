@@ -1,0 +1,43 @@
+.scrolling-bar {
+    background-color: #d1d9e2; /* Light Gray Background */
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    color: #333;
+    border: 2px solid #e2d6d6;
+    border-radius: 10px;
+}
+.scrolling-text {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}
+.student-item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.student-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.company-logo {
+    border-radius: 0;/* Logos will not be circular */
+    width: 50px;
+    height: 50px; 
+}
+.text-center{
+    color: rgb(76, 0, 255);
+    border: 2px solid #e2d6d6;
+
+}
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
